@@ -41,5 +41,6 @@ spec:
         securityContext:
           capabilities:
             add: ["NET_ADMIN"]
+          privileged: true
       nodeSelector:
         kubernetes.io/arch: amd64
