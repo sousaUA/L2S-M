@@ -40,7 +40,8 @@ spec:
         imagePullPolicy: IfNotPresent
         securityContext:
           capabilities:
-            add: ["NET_ADMIN"]
+            add: ["NET_ADMIN"]  
           privileged: true
+      hostNetwork: true
       nodeSelector:
         kubernetes.io/arch: amd64
