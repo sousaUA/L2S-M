@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: l2-ps-arm64
-  #namespace: kube-system
+  namespace: kube-system
   labels:
     l2sm-component: l2-ps
 spec:
